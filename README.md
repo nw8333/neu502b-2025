@@ -1,4 +1,4 @@
-# NEU502b lab code
+# NEU 502B lab code and exercises
 
 Jupyter notebooks and materials for in-class lab demonstrations and exercises.
 
@@ -16,12 +16,12 @@ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh
 ```
 
-If you're on a Mac, use the following instead:
+If you're on an Apple Silicon (M-series) Mac, use the following instead:
 
 ```
 cd ~
-curl https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh -o Miniconda3-latest-MacOSX-x86_64.sh
-bash Miniconda3-latest-MacOSX-x86_64.sh
+curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh
+bash Miniconda3-latest-MacOSX-arm64.sh
 ```
 
 Next, we'll create a conda environment for the class and activate that environment.
@@ -34,8 +34,7 @@ conda activate neu502b
 Now we'll install some necessary packages (and their dependencies) into our conda environment.
 
 ```
-conda install -c conda-forge jupyterlab scipy git matplotlib seaborn
-conda install -c conda-forge gh
+conda install -c conda-forge python=3.12 jupyterlab scipy matplotlib seaborn git gh
 ```
 
 Next, we'll install some neuroscience-specific packages via `pip`.
