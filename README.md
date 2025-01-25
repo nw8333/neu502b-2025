@@ -34,14 +34,19 @@ conda activate neu502b
 Now we'll install some necessary packages (and their dependencies) into our conda environment.
 
 ```
-conda install jupyterlab scipy git matplotlib seaborn
+conda install -c conda-forge jupyterlab scipy git matplotlib seaborn
 conda install -c conda-forge gh
 ```
 
-Later in the course, we'll install some additional packages (but don't worry about this for now); for example:
+Next, we'll install some neuroscience-specific packages via `pip`.
 
 ```
-pip install nilearn
+pip install nilearn psyneulink
+```
+
+Later in the course, we'll install some additional packages—but don't worry about this for now.
+
+```
 conda install -c conda-forge mne-base
 conda install pytorch
 ```
@@ -68,13 +73,13 @@ Back to the terminal: If you don't already have a directory for this class, make
 Now, you'll clone your own fork of the repository (specify your GitHub username below) into your class directory:
 
 ```
-git clone https://github.com/username/neu502b-2024
-cd neu502b-2024
+git clone https://github.com/username/neu502b-2025
+cd neu502b-2025
 ```
 
 ## Running the notebooks
 
-You can download and run the notebooks on your local computer, on the PNI server, or run them on the cloud using Colab. To run the notebooks locally, navigate your terminal to your `neu502b` directory and run `jupyter lab`.
+You can pull and run the notebooks on your local computer, on the PNI server, or run them on the cloud using Colab. To run the notebooks locally, navigate your terminal to your `neu502b` directory and run `jupyter lab`.
 
 To run the notebooks on the server, we'll use port forwarding with an SSH tunnel to render the remote notebook in your local browser. First, log onto the server (e.g. `ssh username@scotty.pni.princeton.edu`). We recommend starting a persistent `tmux` session on the server (you can learn more about `tmux` [here](https://brainhack-princeton.github.io/handbook/content_pages/hack_pages/tmux.html)):
 
