@@ -65,7 +65,7 @@ Select `GitHub.com`, `HTTPS`,  `Yes` and `Paste an authentication token`. Then, 
 
 ## Forking and cloning the repository
 
-On the GitHub repository page (https://github.com/NEU502B/neu502b-2024), click the _Fork_ button at top right. Click _Create fork_ to create a copy of the repository on your own GitHub account.
+On the GitHub repository page (https://github.com/NEU502B/neu502b-2025), click the _Fork_ button at top right. Click _Create fork_ to create a copy of the repository on your own GitHub account.
 
 Back to the terminal: If you don't already have a directory for this class, make one (`mkdir neu502b`) and navigate into it (`cd neu502b`).
 
